@@ -8,6 +8,8 @@ The features are:
 - No mailserver required, mailjet is used for sending (account required by manager)
 - Configurable message text
 
+Sadly, due to cross-origin policy issues, the browser is prohibited from sending POST requests to Mailjet directly, so a python server is necessary to act as a proxy.
+
 # How to use
 
 1. Install python requirements (e.g. with `pip install requests`).
